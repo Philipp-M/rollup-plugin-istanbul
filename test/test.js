@@ -1,7 +1,7 @@
+const babel = require('@rollup/plugin-babel');
 const assert = require('assert');
 const rollup = require('rollup');
 const istanbulPlugin = require('..');
-const babel = require('rollup-plugin-babel');
 const path = require('path');
 
 process.chdir(__dirname);
@@ -55,7 +55,7 @@ describe('rollup-plugin-istanbul', function () {
     return rollup
       .rollup({
         input: 'fixtures/main.js',
-        plugins: [babel(), istanbulPlugin({ compact: false })]
+        plugins: [babel.babel(), istanbulPlugin({ compact: false })]
       })
       .then(bundle =>
         bundle.generate({

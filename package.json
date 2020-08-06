@@ -3,7 +3,7 @@
   "version": "2.0.1",
   "description": "Seamless integration between Rollup and Istanbul.",
   "main": "dist/rollup-plugin-istanbul.cjs.js",
-  "jsnext:main": "dist/rollup-plugin-istanbul.es.js",
+  "module": "dist/rollup-plugin-istanbul.esm.js",
   "files": [
     "src",
     "dist",
@@ -33,19 +33,19 @@
     "lint": "eslint src/index.js test/*.js"
   },
   "peerDependencies": {
-    "rollup": ">=1.17.0"
+    "rollup": ">=2.23.0"
   },
   "dependencies": {
-    "istanbul-lib-instrument": "^3.3.0",
-    "rollup-pluginutils": "^2.8.1"
+    "istanbul-lib-instrument": "^4.0.3",
+    "@rollup/pluginutils": "^3.1.0"
   },
   "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.6.1",
-    "eslint": "^4.12.1",
-    "mocha": "^4.0.1",
-    "rollup": "^1.17.0",
-    "rollup-plugin-babel": "^3.0.2"
+    "@babel/cli": "^7.10.5",
+    "@babel/preset-env": "^7.11.0",
+    "@rollup/plugin-babel": "^5.1.0",
+    "eslint": "^7.6.0",
+    "mocha": "^8.1.1",
+    "rollup": "^2.23.0"
   },
   "repository": {
     "type": "git",

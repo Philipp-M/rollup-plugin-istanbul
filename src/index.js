@@ -1,4 +1,4 @@
-import { createFilter } from 'rollup-pluginutils';
+import { createFilter } from '@rollup/pluginutils';
 import istanbul from 'istanbul-lib-instrument';
 import { extname } from 'path';
 

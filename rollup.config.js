@@ -1,17 +1,18 @@
-import babel from 'rollup-plugin-babel';
+import babel from '@rollup/plugin-babel';
+import pkg from './package.json';
 
 export default {
   input: 'src/index.js',
   plugins: [babel()],
-  external: ['istanbul-lib-instrument', 'rollup-pluginutils'],
+  external: ['@rollup/pluginutils', 'istanbul-lib-instrument'],
   output: [
     {
       format: 'cjs',
-      file: 'dist/rollup-plugin-istanbul.cjs.js'
+      file: pkg.main
     },
     {
       format: 'es',
-      file: 'dist/rollup-plugin-istanbul.es.js'
+      file: pkg.module
     }
   ]
 };
