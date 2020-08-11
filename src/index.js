@@ -1,6 +1,6 @@
 import { createFilter } from '@rollup/pluginutils';
 import istanbul from 'istanbul-lib-instrument';
-import { extname } from 'path';
+const { extname } = require('path');
 
 function makeFilter (opts, extensions) {
   const filter = createFilter(opts.include, opts.exclude);
