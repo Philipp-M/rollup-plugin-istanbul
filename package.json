@@ -4,7 +4,9 @@
   "description": "Seamless integration between Rollup and Istanbul.",
   "main": "dist/rollup-plugin-istanbul.cjs.js",
   "module": "dist/rollup-plugin-istanbul.esm.js",
+  "types": "index.d.ts",
   "files": [
+    "index.d.ts",
     "src",
     "dist",
     "README.md"
